@@ -1,0 +1,33 @@
+Sub Solver_phase_integrated()
+'
+' Solver_phase_integrated Macro
+'
+
+'
+    SolverReset
+    SolverOk SetCell:="$G$98", MaxMinVal:=2, ValueOf:=0, ByChange:= _
+        "$G$60:$G$61,$G$68,$G$71:$G$72,$G$79,$G$82:$G$83,$G$90,$G$92,$G$95" _
+        , Engine:=1, EngineDesc:="GRG Nonlinear"
+    SolverAdd CellRef:="$G$60", Relation:=1, FormulaText:="$I$60"
+    SolverAdd CellRef:="$G$60", Relation:=3, FormulaText:="$H$60"
+    SolverAdd CellRef:="$G$61", Relation:=1, FormulaText:="$I$61"
+    SolverAdd CellRef:="$G$61", Relation:=3, FormulaText:="$H$61"
+    SolverAdd CellRef:="$G$66", Relation:=1, FormulaText:="$I$67"
+    SolverAdd CellRef:="$G$71", Relation:=1, FormulaText:="$I$71"
+    SolverAdd CellRef:="$G$71", Relation:=3, FormulaText:="$H$71"
+    SolverAdd CellRef:="$G$72", Relation:=1, FormulaText:="$I$72"
+    SolverAdd CellRef:="$G$72", Relation:=3, FormulaText:="$H$72"
+    SolverAdd CellRef:="$G$77", Relation:=1, FormulaText:="$I$78"
+    SolverAdd CellRef:="$G$77", Relation:=2, FormulaText:="$I$77"
+    SolverAdd CellRef:="$G$82", Relation:=1, FormulaText:="$I$82"
+    SolverAdd CellRef:="$G$82", Relation:=3, FormulaText:="$H$82"
+    SolverAdd CellRef:="$G$83", Relation:=1, FormulaText:="$I$83"
+    SolverAdd CellRef:="$G$83", Relation:=3, FormulaText:="$H$83"
+    SolverAdd CellRef:="$G$88", Relation:=1, FormulaText:="$I$89"
+    SolverAdd CellRef:="$G$88", Relation:=2, FormulaText:="$I$88"
+    SolverAdd CellRef:="$G$94", Relation:=2, FormulaText:="$I$94"
+    SolverAdd CellRef:="$G$97", Relation:=2, FormulaText:="$I$97"
+
+    
+    SolverSolve
+End Sub
