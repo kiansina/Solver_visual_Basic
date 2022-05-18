@@ -7,6 +7,7 @@ Sub Complex()
     SolverReset
     SolverOk SetCell:="$K$190", MaxMinVal:=2, ValueOf:=0, ByChange:="$K$106;$K$109:$K$110;$K$117;$K$119;$K$121;$K$124:$K$125;$K$132;$K$134;$K$136;$K$138;$K$141;$K$144:$K$145;$K$152;$K$154;$K$156;$K$158;$K$161;$K$164:$K$165;$K$172;$K$174;$K$176;$K$178;$K$181;$K$184;$K$187", _
         Engine:=1, EngineDesc:="GRG Nonlinear"
+    SolverAdd CellRef:="$K$106", Relation:=3, FormulaText:="$L$106"
     SolverAdd CellRef:="$K$109", Relation:=1, FormulaText:="$M$109"
     SolverAdd CellRef:="$K$109", Relation:=3, FormulaText:="$L$109"
     SolverAdd CellRef:="$K$110", Relation:=1, FormulaText:="$M$110"
@@ -27,6 +28,7 @@ Sub Complex()
     SolverAdd CellRef:="$K$150", Relation:=2, FormulaText:="$M$150"
     SolverAdd CellRef:="$K$150", Relation:=1, FormulaText:="$M$151"
     SolverAdd CellRef:="$K$160", Relation:=2, FormulaText:="$M$160"
+    SolverAdd CellRef:="$K$161", Relation:=3, FormulaText:="$L$161"
     SolverAdd CellRef:="$K$164", Relation:=1, FormulaText:="$M$164"
     SolverAdd CellRef:="$K$164", Relation:=3, FormulaText:="$L$164"
     SolverAdd CellRef:="$K$165", Relation:=1, FormulaText:="$M$165"
